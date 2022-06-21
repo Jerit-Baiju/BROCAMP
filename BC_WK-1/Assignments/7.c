@@ -6,12 +6,8 @@ int main()
     int max = 1;
     printf("enter the number - ");
     scanf("%d", &num);
-    do
-    {
-        int ans = max * num;
-        printf("\n%d x %d = %d", max, num, ans);
-        max = max + 1;
-    } while (max <= 10);
-
+    for (max; max <= 10; max++){
+    printf("\n%d x %d = %d", max, num, max*num);
+    }
     return 0;
 }
